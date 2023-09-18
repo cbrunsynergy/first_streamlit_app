@@ -33,3 +33,5 @@ selected_fruits = st.multiselect("Pick some fruits:", list(my_fruit_list.index),
 # (Optionnel) Afficher les fruits sélectionnés
 if selected_fruits:
     st.write(f"You selected: {', '.join(selected_fruits)}")
+
+fruits_to_show = ma_fruit_list.loc[fruits_selected]
