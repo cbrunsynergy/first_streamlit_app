@@ -27,7 +27,8 @@ if search_term:
 st.dataframe(my_fruit_list)
 
 # Créer une liste déroulante pour sélectionner des fruits
-selected_fruits = st.multiselect("Pick some fruits:", list(my_fruit_list.index),[Avocado','Strawberries'])
+selected_fruits = st.multiselect("Pick some fruits:", list(my_fruit_list.index), default=['Avocado', 'Strawberries'])
+
 
 # (Optionnel) Afficher les fruits sélectionnés
 if selected_fruits:
