@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+st.caching.clear_cache()
 
 st.title('My parents New Healthy Diner')
 
