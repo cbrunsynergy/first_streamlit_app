@@ -97,23 +97,23 @@ if streamlit.button('Add a Fruit to the List'):
   streamlit.text(back_from_function)
 
  
-##
-import requests
- fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
- streamlit.text(fruityvice_response.json())
- fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Kiwi")
- fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+
+##import requests
+## fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+ ##streamlit.text(fruityvice_response.json())
+ ##fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Kiwi")
+ ##fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
  
 
- write your own comment -what does the next line do? 
- fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
- write your own comment - what does this do?
- streamlit.dataframe(fruityvice_normalized)
-##
+ ##write your own comment -what does the next line do? 
+ ##fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
+##write your own comment - what does this do?
+ ##streamlit.dataframe(fruityvice_normalized)
+
  
 
-streamlit.stop()
+##streamlit.stop()
 
  
 
