@@ -36,4 +36,4 @@ if selected_fruits:
 
 fruits_to_show = ma_fruit_list.loc[fruits_selected]
 
-streamlit.header("Fruityvice Fruit Advice!")
+
