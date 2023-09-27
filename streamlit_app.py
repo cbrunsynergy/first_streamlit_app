@@ -26,14 +26,14 @@ if search_term:
 # Afficher le dataframe filtré
 st.dataframe(my_fruit_list)
 
+
 # Créer une liste déroulante pour sélectionner des fruits
 selected_fruits = st.multiselect("Pick some fruits:", list(my_fruit_list.index), default=['Avocado', 'Strawberries'])
-
 
 # (Optionnel) Afficher les fruits sélectionnés
 if selected_fruits:
     st.write(f"You selected: {', '.join(selected_fruits)}")
 
-fruits_to_show = ma_fruit_list.loc[fruits_selected]
+fruits_to_show = my_fruit_list.loc[selected_fruits]  # Corrigez ici
 
 
