@@ -36,7 +36,7 @@ if selected_fruits:
 
 fruits_to_show = my_fruit_list.loc[selected_fruits]  # Corrigez ici
 
-streamlit.header("Fruityvice Fruit Advice!")
+st.header("Fruityvice Fruit Advice!")
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
+st.text(fruityvice_response)
