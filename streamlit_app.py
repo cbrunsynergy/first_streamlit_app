@@ -35,3 +35,8 @@ if selected_fruits:
     st.write(f"You selected: {', '.join(selected_fruits)}")
 
 fruits_to_show = ma_fruit_list.loc[fruits_selected]
+
+
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
